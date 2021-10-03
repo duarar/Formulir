@@ -19,6 +19,14 @@
         <!-- <h3>Open Rekrumen Anggota Baru Computer Cyber</h3> -->
         <h5><a href="#/form-bootstrap-4/">Isi Form Dibawah Ini !!</a></h5>
       </center>
+
+      <div class="alert alert-success d-none my-alert" role="alert">
+        <h4 class="alert-heading">Pendaftaran Sukses!</h4>
+        <p>Silahkan Menunggu Kabar Dari Kami Selanjutnya.</p>
+        <hr />
+        <p class="mb-0">Salam Panitia.</p>
+      </div>
+
       <form name="formulir-pendaftaran-cc">
         <div class="form-group">
           <label for="nama">Nama</label>
@@ -49,7 +57,11 @@
         </div>
 
         <br />
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+        <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          Loading...
+        </button>
       </form>
     </div>
 
